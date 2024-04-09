@@ -1,0 +1,74 @@
+[debug] [2024-04-09T14:39:52.374Z] ----------------------------------------------------------------------
+[debug] [2024-04-09T14:39:52.377Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maitr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-09T14:39:52.378Z] CLI Version:   13.5.2
+[debug] [2024-04-09T14:39:52.378Z] Platform:      win32
+[debug] [2024-04-09T14:39:52.378Z] Node Version:  v20.11.0
+[debug] [2024-04-09T14:39:52.378Z] Time:          Tue Apr 09 2024 10:39:52 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2024-04-09T14:39:52.378Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-09T14:39:52.382Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-04-09T14:39:52.516Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-09T14:39:52.517Z] > authorizing via signed-in user (arthurwintermorgan@gmail.com)
+[debug] [2024-04-09T14:39:52.517Z] [iam] checking project cyse1008-test for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-04-09T14:39:52.518Z] > refreshing access token with scopes: []
+[debug] [2024-04-09T14:39:52.520Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-09T14:39:52.520Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-09T14:39:52.619Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-04-09T14:39:52.619Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-04-09T14:39:52.684Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-09T14:39:52.684Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-09T14:39:52.691Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions [none]
+[debug] [2024-04-09T14:39:52.691Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions x-goog-quota-user=projects/cyse1008-test
+[debug] [2024-04-09T14:39:52.691Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-04-09T14:39:53.038Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions 200
+[debug] [2024-04-09T14:39:53.038Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions {}
+[debug] [2024-04-09T14:39:53.038Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project cyse1008-test:
+
+  datastore.indexes.create
+  datastore.indexes.delete
+  datastore.indexes.list
+  datastore.indexes.update
+  firebase.projects.get
+  firebasehosting.sites.update
+  firebaserules.releases.create
+  firebaserules.releases.update
+  firebaserules.rulesets.create
+[debug] [2024-04-09T14:39:53.039Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cyse1008-test [none]
+[debug] [2024-04-09T14:39:53.388Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cyse1008-test 403
+[debug] [2024-04-09T14:39:53.388Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cyse1008-test {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-04-09T14:39:53.389Z] HTTP Error: 403, The caller does not have permission
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-04-09T14:47:31.222Z] ----------------------------------------------------------------------
+[debug] [2024-04-09T14:47:31.225Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maitr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-04-09T14:47:31.226Z] CLI Version:   13.7.1
+[debug] [2024-04-09T14:47:31.226Z] Platform:      win32
+[debug] [2024-04-09T14:47:31.226Z] Node Version:  v20.11.0
+[debug] [2024-04-09T14:47:31.226Z] Time:          Tue Apr 09 2024 10:47:31 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2024-04-09T14:47:31.227Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-09T14:47:31.314Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-09T14:47:31.315Z] > authorizing via signed-in user (arthurwintermorgan@gmail.com)
+[debug] [2024-04-09T14:47:31.315Z] [iam] checking project cyse1008-test for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-04-09T14:47:31.322Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions [none]
+[debug] [2024-04-09T14:47:31.323Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions x-goog-quota-user=projects/cyse1008-test
+[debug] [2024-04-09T14:47:31.323Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-04-09T14:47:31.847Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions 200
+[debug] [2024-04-09T14:47:31.847Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyse1008-test:testIamPermissions {}
+[debug] [2024-04-09T14:47:31.848Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project cyse1008-test:
+
+  datastore.indexes.create
+  datastore.indexes.delete
+  datastore.indexes.list
+  datastore.indexes.update
+  firebase.projects.get
+  firebasehosting.sites.update
+  firebaserules.releases.create
+  firebaserules.releases.update
+  firebaserules.rulesets.create
+[debug] [2024-04-09T14:47:31.848Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cyse1008-test [none]
+[debug] [2024-04-09T14:47:32.088Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cyse1008-test 403
+[debug] [2024-04-09T14:47:32.088Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cyse1008-test {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-04-09T14:47:32.089Z] HTTP Error: 403, The caller does not have permission
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
